@@ -20,3 +20,15 @@ print(4 > 3 and 2 > 1)
 #not operator : converts false into true and vice versa
 
 print(not 2 > 3)
+
+i = 5
+i = i + 2 #expended form
+i += 2 #minimize form
+
+#operator precedence
+
+results = 2 + 3 * 5
+print(results)
+
+results = (2 + 3) * 5
+print(results)
