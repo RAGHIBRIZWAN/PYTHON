@@ -182,3 +182,18 @@ def hello():
     print('Hello World!')
 
 hello()
+
+def authenticate(fx):
+    def mfx(name,pswd):
+        if names[name] == pswd:
+            print('Logged In!')
+            # fx()
+        else:
+            print('Incorrect Password!')
+    return mfx
+
+@authenticate
+def hello():
+    pass
+
+hello('raghib',1)
