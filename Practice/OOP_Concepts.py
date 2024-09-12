@@ -167,3 +167,18 @@ print(p3)
 p3 = p1 - p2
 
 print(p3)
+
+#DECORATORS
+
+def greet(fx):
+    def mfx():
+        print('Good Morning')
+        fx()
+        print('Thankyou!')
+    return mfx
+
+@greet
+def hello():
+    print('Hello World!')
+
+hello()
