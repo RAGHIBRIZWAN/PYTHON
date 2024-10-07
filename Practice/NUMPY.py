@@ -1,5 +1,5 @@
 import numpy as np
-# Numpy Array from List.
+# Numpy Array using List.
 
 l1 = [1,2,3]
 a = np.array(l1)
@@ -17,9 +17,9 @@ print(c)
 d = np.arange(0,11,2)
 print(d)
 
-# zeroes and ones functions gives the arrays of zeroes and ones having number elements written in the parameter.
+# zeros and ones functions gives the arrays of zeroes and ones having number elements written in the parameter.
 
-# linespace gives the array of number over a specified interval.
+# linspace gives the array of number over a specified interval.
 
 e = np.linspace(0,10,20)
 print(e)
