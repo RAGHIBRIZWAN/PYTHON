@@ -1,6 +1,19 @@
 import numpy as np
 # Numpy Array using List.
 
+# np.diag([1,2,3,4,5]) is used to make a diagonal matrix
+# np.isnan is used to check is the array null or not
+# arr.dtype is used to get data type of array
+# for x in np.nditer(arr):
+#    print(x) -> gives each and every element of an array.
+# np.array_split(arr,3) -> 3 = number of splits
+# np.where(arr == 4) -> used to find an element in an array.
+# np.searchsorted(arr,10) -> finds index where value 10 should be inserted
+# arr.transpose()
+# np.linalg.det(arr) -> Determinant of 2-D matrix.
+# np.linalg.inv(arr) -> Inverse of a matrix
+
+
 l1 = [1,2,3]
 a = np.array(l1)
 print(a)
