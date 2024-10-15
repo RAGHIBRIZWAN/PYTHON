@@ -1,6 +1,9 @@
 import numpy as np
 # Numpy Array using List.
 
+# a.ndim -> used for checking dimensions
+# a = np.array([1,2,3,4,5], ndmin = 5) -> used to make an array of 5 dimensions
+# np.append() is used to append list in an array
 # np.diag([1,2,3,4,5]) is used to make a diagonal matrix
 # np.isnan is used to check is the array null or not
 # arr.dtype is used to get data type of array
