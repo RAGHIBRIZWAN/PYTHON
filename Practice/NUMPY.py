@@ -118,6 +118,10 @@ print(myAdd([1,2,3,4,5],[6,7,8,9,10]))
 
 # np.trunc() round off the decimals of elements of an array.
 
+arr = np.array([3.55,3.45,3.89,3.2,3.5,-3.9,-3.5,-3.2])
+newarr = np.trunc(arr) # Makes all the values 3.
+print(newarr)
+
 # np.floor(arr)
 
 # np.ceil(arr)
