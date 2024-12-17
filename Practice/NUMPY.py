@@ -81,6 +81,16 @@ print(a/a)
 
 # arr.sum(), arr.mean() gives sum and mean.
 
+arr = np.arange(1,10)
+print(arr.sum()) # Gives 45
+
+newarr = arr.reshape(3,3)
+
+print(newarr)
+
+print(newarr.sum(axis=0)) # Add column-wise and return an array
+print(newarr.sum(axis=1)) # Add row-wise and return an array
+
 # arr.shape gives number of rows and columns
 
 # frompyfunc() functions takes function,number of input arrays, number of output arrays.
