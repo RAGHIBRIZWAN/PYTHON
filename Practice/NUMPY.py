@@ -117,14 +117,21 @@ print(myAdd([1,2,3,4,5],[6,7,8,9,10]))
 # np.absolute(arr) gives the absolute values of the elements of the array.
 
 # np.trunc() round off the decimals of elements of an array.
-
 arr = np.array([3.55,3.45,3.89,3.2,3.5,-3.9,-3.5,-3.2])
 newarr = np.trunc(arr) # Makes all the values 3.
 print(newarr)
 
+# np.around()
+arr = np.array([3.55,3.45,3.89,3.2,3.5,-3.9,-3.5,-3.2])
+newarr = np.array([3.559,3.4552,3.8945,3.258,3.558,-3.945,-3.525,-3.22])
+print(np.around(arr))
+print(np.around(newarr,2))
+
 # np.floor(arr)
+print(np.floor(arr))
 
 # np.ceil(arr)
+print(np.ceil(arr))
 
 # np.unique(arr) removes the duplicates.
 
@@ -134,14 +141,26 @@ print(newarr)
 
 # np.gcd(num1,num2) gives the greatest common denominator.
 
-# np.gcd.reduce(arr) gives the greatest common denominator of all elements of an array.
+# np.gcd.reduce(arr) gives the greatest common denominator of all elements of an array(returns int).
 
 # np.lcm(num1,num2) gives the least common multiple.
 
-# np.lcm.reduce(arr) gives the least common multiple of all elements of an array.
+# np.lcm.reduce(arr) gives the least common multiple of all elements of an array(returns int).
 
 # np.diff(arr) subtracts two successive elements.
 
 # np.prod(arr) gives product of all elements of an array.
+arr1 = np.array([1,2,3,4,5])
+arr2 = np.array([6,7,8,9,10])
+print(np.prod(arr1))
+x = np.prod([arr1,arr2]) # multiply like 1*2*3*4*5*6*7*8*9*10
+print(x)
 
 # np.cumsum(arr) adds two successive elements.
+
+# Random Distributions
+print(np.random.normal(loc = 1, scale = 1, size = (2,3)))
+print(np.random.binomial(n=10,p=0.5,size=10))
+print(np.random.poisson(lam=2, size=10))
+print(np.random.uniform(low=0,high=1,size=(2,3)))
+print(np.random.logistic(loc=1, scale=2, size=(2,3)))
