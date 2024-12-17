@@ -19,3 +19,8 @@ for word in sentences:
 from sklearn.feature_extraction.text import CountVectorizer
 cv = CountVectorizer(max_features=1500)
 x = cv.fit_transform(corpus).toarray()
+
+# For Tf-Idf
+from sklearn.feature_extraction.text import TfidfVectorizer
+cv = TfidfVectorizer()
+x = cv.fit_transform(corpus).toarray()
