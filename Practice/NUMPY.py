@@ -35,6 +35,12 @@ print(d)
 
 # zeros and ones functions gives the arrays of zeroes and ones having number elements written in the parameter.
 
+z = np.zeros((5,5))
+print(z)
+
+o = np.ones((5,5))
+print(o)
+
 # linspace gives the array of number over a specified interval.
 
 e = np.linspace(0,10,20)
